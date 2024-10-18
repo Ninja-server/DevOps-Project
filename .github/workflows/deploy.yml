@@ -1,0 +1,20 @@
+name: CI/CD pipeline
+on: 
+  push: 
+    branches: 
+      main
+  workflow_dispatch:
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Git Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Nodejs
+        uses: actions/setup-node@v4
+        with: 
+           node-version: 14
+      - run: | 
+         npm ci
+         npm test
