@@ -16,5 +16,6 @@ jobs:
         with: 
            node-version: 14
            cache-dependency-path: /home/runner/work/DevOps-Project/DevOps-Project/package.json
-      - run: | 
-          npm run install
+      - run:  cd DevOps-Project/DevOps-Project && npm install
+
+          
