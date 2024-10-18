@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v4
         with: 
            node-version: 14
-           cache-dependency-path: /home/runner/work/DevOps-Project/DevOps-Project/package.json
-      - run:  cd DevOps-Project/DevOps-Project && npm install
+           cache-dependency-path: /home/runner/work/DevOps-Project/package.json
+      - run:  cd DevOps-Project/frontend && npm install
 
           
